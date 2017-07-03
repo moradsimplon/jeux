@@ -1,8 +1,29 @@
 body {
 background-image: url(http://dailygeekshow.com/wp-content/uploads/2015/03/shutterstock_175134956.jpg);
+
 }
 
 section {
+margin-top: 10%;
 text-align: center;
 font-family: 'Indie Flower', cursive;
+}
+h1{
+  font-size: 40px;
+}
+button{
+  width: 150px;
+  height: 80px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+
+
+}
+button:hover{
+  background-color: white;
+  color: black;
 }
