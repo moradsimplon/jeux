@@ -20,10 +20,14 @@ button{
   font-size: 15px;
   font-weight: bold;
   border-radius: 8px;
+  text-decoration: none;
 
 
 }
 button:hover{
   background-color: white;
   color: black;
+}
+button:active{
+  box-shadow: inset 3px 3px 3px 3px grey;
 }
