@@ -1,43 +1,66 @@
+
+  var choixuser="";
+function choix(x){
+choixuser=x;
+//document.getElementById('demo').innerHTML =  choixuser;
+if (choixuser=="ciseaux"){
+document.getElementById("feuille").style.display = "none";
+document.getElementById("pierre").style.display = "none";
+}
+else if (choixuser=="feuille") {
+  document.getElementById("ciseaux").style.display = "none";
+  document.getElementById("pierre").style.display = "none";
+
+}
+else {
+  document.getElementById("ciseaux").style.display = "none";
+  document.getElementById("feuille").style.display = "none";
+}
+}
+
+
+
 function game() {
 
 
 var a=prompt("Jouer");
 var b = Math.floor((Math.random() * 3) + 1);
-var pierre = document.getElementById('pierre');
-pierre.src= "téléchargement.jpg";
+
+
 if(b==1){
-  b= pierre;
+  b= "papier";
 } else if (b==2){
-   b=pierre;
+   b="pierre";
 } else {
-  b=pierre;
+  b="ciseaux";
 }
 
-console.log(b);
+
 document.getElementById('id').innerHTML="l'ordinateur joue" + " " + b
 
+
 if(a==b){
-  document.getElementById('image').src = "source.gif";
+  document.getElementById('image').src = "img/egalite.gif";
 }
 else if(a==="pierre" && b==="papier"){
-  document.getElementById('image').src = "source.gif";
+  document.getElementById('image').src = "img/perdu.gif";
 }
 else if(a==="ciseaux" && b==="papier"){
-  document.getElementById('image').src = "source.gif";
+  document.getElementById('image').src = "img/gagne.gif";
 }
 else if(a==="papier" && b==="pierre"){
-  document.getElementById('image').src = "source.gif";
+  document.getElementById('image').src = "img/gagne.gif";
 }
 else if(a==="papier" && b==="ciseaux"){
-  document.getElementById('image').src = "source.gif";
+  document.getElementById('image').src = "img/perdu.gif";
 }
 else if(a==="ciseaux" && b==="pierre"){
-  document.getElementById('image').src = "source.gif";
+  document.getElementById('image').src = "img/perdu.gif";
 }
 else if(a==="ciseaux" && b==="papier"){
-  document.getElementById('image').src = "source.gif";
+  document.getElementById('image').src = "img/gagne.gif";
 }
-else if (a === "" || a !== "pierre" || a !== "feuille" || a !== "ciseaux") {
+else if (a === "" || a !== "pierre" || a !== "papier" || a !== "ciseaux") {
 alert("Entre une réponse, correct");
 }
 }
