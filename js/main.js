@@ -7,6 +7,7 @@ var scoreordi=0;
 
 
 
+
 function hideOther() {
   if (choixuser=="ciseaux"){
   document.getElementById("feuille").style.display = "none";
@@ -27,16 +28,21 @@ function hideOther() {
 }
 
 function scoregeneral() {
-  if (scoreuser==="3"){
-    document.getElementById('scoregen').src="img/win.gif";
+  if (scoreuser==3){
+    document.getElementById('scoregen').src="img/win.gif" ;
+    document.getElementById('final').innerHTML="YOU WIN!";
+
 
   }
-  else if (scoreordi==="3") {
-    document.getElementById('scoregen').src="img/lose.gif";
+  else if (scoreordi==3) {
+    document.getElementById('scoregen').src="img/lose.gif"  ;
+    document.getElementById('final').innerHTML="YOU LOSE!";
 
   }
 }
+
 function game(a) {
+
 
 
 
@@ -116,7 +122,20 @@ setTimeout(function () {
   document.getElementById("image").style.display = "none";
 
 
-}, 3000);
-scoregeneral();
+}, 2000);
+if (scoreuser==3 || scoreordi==3) {
+
+setTimeout(function() {
+  scoregeneral();
+  document.getElementById("feuille").style.display = "none";
+  document.getElementById("pierre").style.display = "none";
+  document.getElementById("ciseaux").style.display = "none";
+  document.getElementById("ordi").style.display = "none";
+  document.getElementById("image").style.display = "none";
+
+}, 2000);
+}
+
+
 
 }
