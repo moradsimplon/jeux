@@ -20,10 +20,17 @@
   La feuille bat la pierre en l’enveloppant.<br>
   <span>bonne chance et que le meilleur gagne</span>
 </p>
+<figure>
+  <img id="kakashi" src="" alt=""><br>
+  <figcaption id="bienvenue"></figcaption>
+</figure>
+<input type="text" name="utilisateur" value="votre pseudo" id="name" onchange="username()">
+
+<input type="submit" onclick="username()" name="" value="">
 
     </section>
     <section class="container">
-<div class="row">
+<div class=" row">
 
     <div class="col-3 "><img class="col-8" id="pierre" onclick="game('pierre')"src="img/pierre.png" alt="pierre"></div>
     <div class="col-3" ><img class="col-8" id="feuille" onclick="game('feuille')"src="img/feuille.png" alt="feuille"></div>
@@ -39,12 +46,11 @@
 <p id="score">score</p>
 
   <img id="scoregen" src="" alt=""> <br>
-<span id="final"></span>
+<span id="final"></span><br>
+<button id="restart" type="button" onclick="window.location.reload()" name="button">recommencer</button>
 </div>
 
-      <!-- <div id="id">
-    <button type="button" name="button" onclick="game()">start</button>
-      </div> -->
+
     </section>
     <section>
 

@@ -26,7 +26,27 @@ function hideOther() {
 
   }
 }
+var names = "";
+function username()
+        {
+           names=document.getElementById("name").value;
 
+presentation();
+action();
+document.getElementsByTagName('input')[0].style.display="none";
+document.getElementsByTagName('input')[1].style.display="none";
+        }
+        function presentation() {
+          document.getElementById('kakashi').src="img/Kakashi.png";
+          document.getElementById('bienvenue').innerHTML= "salut"+" "+names+ " " + "konoha , compte sur toi";
+
+        }
+        function action() {
+          document.getElementById("feuille").style.display = "block";
+          document.getElementById("pierre").style.display = "block";
+          document.getElementById("ciseaux").style.display = "block";
+
+        }
 function scoregeneral() {
   if (scoreuser==3){
     document.getElementById('scoregen').src="img/win.gif" ;
@@ -112,7 +132,7 @@ else if(choixuser=="ciseaux" && choixOrdi=="feuille"){
 else if (choixuser == "" || choixuser !== "pierre" || choixuser !== "feuille" || a !== "ciseaux") {
 alert("Entre une réponse, correct");
  }
-document.getElementById("score").innerHTML= scoreuser +" " + "vs" + " "  + scoreordi ;
+document.getElementById("score").innerHTML= names + " " + scoreuser +" " + "vs" + " "  +"CPU" + " " + scoreordi ;
 setTimeout(function () {
   // mettre les instruction
   document.getElementById("feuille").style.display = "block";
@@ -132,6 +152,9 @@ setTimeout(function() {
   document.getElementById("ciseaux").style.display = "none";
   document.getElementById("ordi").style.display = "none";
   document.getElementById("image").style.display = "none";
+  document.getElementById('restart').style.display="block";
+  scoreuser==0;
+  scoreordi==0;
 
 }, 2000);
 }
