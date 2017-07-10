@@ -1,3 +1,7 @@
+@font-face {
+  font-family: naruto ;
+  src: url(../font/njnaruto.ttf);
+}
 body {
 background-image: url(http://img05.deviantart.net/2fda/i/2014/060/0/0/background_naruto_by_nitopfam-d78kh4e.png)   ;
 background-size: cover;
@@ -7,17 +11,37 @@ height: 100%;
 
 }
 *{
+font-family: naruto ;
   color: white;
 }
 section {
 margin-top: 10%;
 text-align: center;
-font-family: 'Indie Flower', cursive;
+
 }
+
+input {
+  font-family: naruto ;
+  color: black;
+}
+
 h1{
-  font-size: 40px;
+  font-size: 50px;
+}
+#scoregen{
+  width: 245px;
+  height: 260px;
+}
+#image {
+  justify-content:center;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border: none;
 }
 button{
+  font-family: naruto;
+  margin: 0 auto;
   width: 150px;
   height: 80px;
   background-color: black;

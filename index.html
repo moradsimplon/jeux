@@ -10,8 +10,11 @@
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   </head>
   <body>
-    <section>
+    <section class="row">
+      <div class="col-6 col-sm-8">
+
       <h1>PIERRE-FEUILLE-CISEAUX</h1>
+
       <h3>Régles du jeu</h3>
       <p>jouer au jeu classique de pierre feuille ciseaux contre l'ordinateur <br>
       les regles sont simple : <br>
@@ -20,13 +23,14 @@
   La feuille bat la pierre en l’enveloppant.<br>
   <span>bonne chance et que le meilleur gagne</span>
 </p>
-<figure>
-  <img id="kakashi" src="" alt=""><br>
+</div>
+<figure class="col-4 col-sm-4">
+  <img class="col-6" id="kakashi" src="" alt="">
   <figcaption id="bienvenue"></figcaption>
-</figure>
-<input type="text" name="utilisateur" value="votre pseudo" id="name" onchange="username()">
+  <input type="text" name="utilisateur" value="votre pseudo" id="name" onchange="username()">
 
-<input type="submit" onclick="username()" name="" value="">
+  <input type="submit" onclick="username()" name="" value="demarrer">
+</figure>
 
     </section>
     <section class="container">
@@ -39,12 +43,11 @@
       <img class="col-8" id="ordi" src="" alt="">
     </div>
 
-    <div ><img  id="image" src="" alt=""></div>
-    </div>
-<div >
+
+<div class="col-12" >
 
 <p id="score">score</p>
-
+<img  id="image" src="" alt="">
   <img id="scoregen" src="" alt=""> <br>
 <span id="final"></span><br>
 <button id="restart" type="button" onclick="window.location.reload()" name="button">recommencer</button>
@@ -52,10 +55,6 @@
 
 
     </section>
-    <section>
 
-      <div></div>
-      <div></div>
-    </section>
   </body>
 </html>

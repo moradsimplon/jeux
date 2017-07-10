@@ -38,7 +38,7 @@ document.getElementsByTagName('input')[1].style.display="none";
         }
         function presentation() {
           document.getElementById('kakashi').src="img/Kakashi.png";
-          document.getElementById('bienvenue').innerHTML= "salut"+" "+names+ " " + "konoha , compte sur toi";
+          document.getElementById('bienvenue').innerHTML= "salut"+" "+names+ ", " + " " + "on compte sur toi";
 
         }
         function action() {
