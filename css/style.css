@@ -2,6 +2,9 @@
   font-family: naruto ;
   src: url(../font/njnaruto.ttf);
 }
+html{
+  height: 100
+}
 body {
 background-image: url(http://img05.deviantart.net/2fda/i/2014/060/0/0/background_naruto_by_nitopfam-d78kh4e.png)   ;
 background-size: cover;
@@ -14,6 +17,7 @@ height: 100%;
 font-family: naruto ;
   color: white;
 }
+
 section {
 margin-top: 10%;
 text-align: center;
